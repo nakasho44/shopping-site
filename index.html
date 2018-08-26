@@ -41,6 +41,14 @@
   <!--Owl Carouselを動作させるために追加-->
   <script src="carousel.js"></script>
   
+  <script>
+    $(document).ready(function() {
+      $(".menu").click(function() {
+        $(".sp_menu").slideToggle();
+      });
+    });
+  </script>
+  
 
 </head>
 <body>
@@ -70,10 +78,19 @@
             <ul class="sp_navi_li">
               <li class=""><a href=""><img src="images/top_sp/fb.png" alt="" srcset="images/top_sp/fb@2x.png 2x"></a></li>
               <li class=""><a href=""><img src="images/top_sp/insta.png" alt="" srcset="images/top_sp/insta@2x.png 2x"></a></li>
-              <li class=""><a href=""><img src="images/top_sp/menu_icon.png" alt="" srcset="images/top_sp/menu_icon@2x.png 2x"></a></li>
+              <li class="menu"><img src="images/top_sp/menu_icon.png" alt="" srcset="images/top_sp/menu_icon@2x.png 2x"></li>
             </ul>
           </div>
           <!--.sp_navi-->
+          <div class="sp_menu">
+            <ul>
+              <li><a href="">LOGIN</a></li>
+              <li><a href="">CART</a></li>
+              <li><a href="">MY PAGE</a></li>
+              <li><a href="">SHOPPING GUIDE</a></li>
+            </ul>
+          </div>
+          <!--.sp_menu-->
           
         </div>
         <!--.six .columns .navi-->
@@ -234,15 +251,16 @@
           <div class="pc_sidemenu">
             
             <div class="search">
-              <img src="images/top/itemserch.png">
-              <div class="search_box">
-                <p>Search..<img src="images/top/search_icon.png"></p>
-              </div>  
+              <div class="search_in">
+                <img src="images/top/itemserch.png">
+                <input type="text" placeholder="Search...">
+              </div>
             </div>
             
             <div class="sp_search">
-              <div class="search_box">
-                <p>Search..<img src="images/top/search_icon.png"></p>
+              <div class="search_in">
+                <img src="images/top/itemserch.png">
+                <input type="text" placeholder="Search...">
               </div>  
             </div>
             
