@@ -188,40 +188,76 @@ body {
     font-weight: normal;
     color: #887f69;
   }
-  #contents .container .row #main .product_area .parts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  #contents .container .row #main .product_area .purchase {
+    position: relative;
     border-bottom: 1px solid #e2ddd4;
   }
-  #contents .container .row #main .product_area .parts .gragh, #contents .container .row #main .product_area .parts .cart {
-    box-sizing: border-box;
-    width: calc( ( 100% - 15px ) / 2 );
+  #contents .container .row #main .product_area .purchase .details {
+    display: inline-block;
+    width: 36.5rem;
   }
-  #contents .container .row #main .product_area .parts .price_quantity {
+  #contents .container .row #main .product_area .purchase .details .price {
+    display: inline-block;
+    width: 36.5rem;
+    height: 70px;
     border-top: 1px solid #e2ddd4;
-    margin-bottom: 0;
   }
-  #contents .container .row #main .product_area .parts .price_quantity th {
+  #contents .container .row #main .product_area .purchase .details .price .title {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.6rem;
+    font-weight: bold;
     color: #887f69;
+    margin-top: 25px;
   }
-  #contents .container .row #main .product_area .parts .price_quantity th:nth-of-type(n+2) {
-    border-bottom: none;
+  #contents .container .row #main .product_area .purchase .details .price .amount_of_money {
+    font-size: 1.6rem;
+    color: #f09;
+    display: inline-block;
+    width: 200px;
+    font-style: oblique;
+    margin-left: 20px;
   }
-  #contents .container .row #main .product_area .parts .price_quantity td span {
-    color: #ff00cc;
+  #contents .container .row #main .product_area .purchase .details .price .amount_of_money span {
+    font-size: 2.6rem;
   }
-  #contents .container .row #main .product_area .parts .price_quantity td:nth-of-type(n+2) {
-    border-bottom: none;
+  #contents .container .row #main .product_area .purchase .details .price .amount_of_money p {
+    color: #000;
+    display: inline-block;
+    font-weight: bold;
   }
-  #contents .container .row #main .product_area .parts .price_quantity p {
-    border: 1px solid #e2ddd4;
-    height: 20px;
-    margin-bottom: 0;
+  #contents .container .row #main .product_area .purchase .details .quantity {
+    display: inline-block;
+    width: 36.5rem;
+    height: 70px;
+    border-top: 1px solid #e2ddd4;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity .title {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #887f69;
+    margin-top: 25px;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity .number {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity .number input {
+    width: 160px;
+    border-radius: 0;
+  }
+  #contents .container .row #main .product_area .purchase .add_to {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-left: 20px;
   }
   #contents .container .row #main .product_area .product_description {
     margin-top: 30px;
-    border-bottom: 2px solid #e2ddd4;
+    border-bottom: 1px solid #887f69;
   }
   #contents .container .row #main .product_area .product_description p {
     margin-bottom: 5px;
@@ -362,6 +398,7 @@ body {
   }
   #contents .container .row #main .product_area {
     background-color: #fff;
+    padding: 5px;
   }
   #contents .container .row #main .product_area .name {
     padding-top: 2.5rem;
@@ -425,27 +462,69 @@ body {
   #contents .container .row #main .product_area .color_size th {
     background-color: #e2ddd4;
   }
-  #contents .container .row #main .product_area .parts .gragh {
-    border-top: 1px solid #e2ddd4;
+  #contents .container .row #main .product_area .purchase {
+    position: relative;
   }
-  #contents .container .row #main .product_area .parts .gragh th {
+  #contents .container .row #main .product_area .purchase .details {
+    display: inline-block;
+    width: 27rem;
+    box-sizing: border-box;
+  }
+  #contents .container .row #main .product_area .purchase .details .price {
+    display: inline-block;
+    width: 27rem;
+    height: 70px;
+    border-top: 1px solid #e2ddd4;
+    box-sizing: border-box;
+  }
+  #contents .container .row #main .product_area .purchase .details .price .title {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #887f69;
+    margin-top: 25px;
   }
-  #contents .container .row #main .product_area .parts .gragh td span {
-    color: #ff0099;
-    font-size: 1.7em;
+  #contents .container .row #main .product_area .purchase .details .price .amount_of_money {
+    font-size: 1.6rem;
+    color: #f09;
+    display: inline-block;
+    width: 150px;
+    font-style: oblique;
   }
-  #contents .container .row #main .product_area .parts .gragh td p {
-    border: 1px solid #e2ddd4;
-    height: 4.0rem;
-    margin-bottom: 0;
-    width: 80%;
+  #contents .container .row #main .product_area .purchase .details .price .amount_of_money span {
+    font-size: 2.6rem;
   }
-  #contents .container .row #main .product_area .parts .cart {
-    width: 80%;
+  #contents .container .row #main .product_area .purchase .details .price .amount_of_money p {
+    color: #000;
+    display: inline-block;
+    font-weight: bold;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity {
+    display: inline-block;
+    width: 27rem;
+    height: 70px;
+    border-top: 1px solid #e2ddd4;
+    border-bottom: 1px solid #e2ddd4;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity .title {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #887f69;
+    margin-top: 25px;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity .number {
+    display: inline-block;
+  }
+  #contents .container .row #main .product_area .purchase .details .quantity .number input {
+    width: 140px;
+    border-radius: 0;
+  }
+  #contents .container .row #main .product_area .purchase .add_to {
     text-align: center;
-    margin: 0 auto;
+    margin-top: 20px;
   }
   #contents .container .row #main .product_area .product_description {
     border-bottom: 1px solid #887f69;
@@ -471,6 +550,7 @@ body {
   #contents .container .row #main .product_area .table_description {
     width: 100%;
     padding-bottom: 50px;
+    margin-bottom: 20px;
   }
   #contents .container .row #main .product_area .table_description th, #contents .container .row #main .product_area .table_description td {
     border: 1px solid #e2ddd4;
@@ -489,6 +569,7 @@ body {
     font-weight: normal;
     color: #887f69;
     font-size: 1.2rem;
+    padding-right: 15px;
   }
   #contents .container .row #main .items {
     display: flex;

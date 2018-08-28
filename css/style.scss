@@ -242,51 +242,82 @@ header {
                             }
                             
                         }
-                        .parts {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            
+                        
+                        .purchase {
+                            position: relative;
                             border-bottom: 1px solid #e2ddd4;
-                            
-                            .gragh, .cart {
-                                box-sizing: border-box;
-                                width: calc( ( 100% - 15px ) / 2 );
+                            .details {
+                                display: inline-block;
+                                width: 36.5rem;
+                                .price {
+                                    display: inline-block;
+                                    width: 36.5rem;
+                                    height: 70px;
+                                    border-top: 1px solid #e2ddd4;
+                                    // border-bottom: 1px solid #e2ddd4;
+                                    .title {
+                                        display: inline-block;
+                                        width: 100px;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                        color: #887f69;
+                                        margin-top: 25px;
+                                    }
+                                    .amount_of_money {
+                                        font-size: 1.6rem;
+                                        color: #f09;
+                                        display: inline-block;
+                                        width: 200px;
+                                        font-style: oblique;
+                                        margin-left: 20px;
+                                        span {
+                                            font-size: 2.6rem;
+                                        }
+                                        p {
+                                            color: #000;
+                                            display: inline-block;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                                .quantity {
+                                    display: inline-block;
+                                    width: 36.5rem;
+                                    height: 70px;
+                                    border-top: 1px solid #e2ddd4;
+                                    // border-bottom: 1px solid #e2ddd4;
+                                    .title {
+                                        display: inline-block;
+                                        width: 100px;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                        color: #887f69;
+                                        margin-top: 25px;
+                                    }
+                                    .number {
+                                        display: inline-block;
+                                        margin-left: 20px;
+                                        
+                                        input {
+                                            width: 160px;
+                                            border-radius: 0;
+                                        }
+                                    }
+                                }
                             }
-                            
-                            .price_quantity {
-                                border-top: 1px solid #e2ddd4;
-                                margin-bottom: 0;
-                                th {
-                                    color: #887f69;
-                                    
-                                    &:nth-of-type(n+2) {
-                                        border-bottom: none;
-                                    }
-                                }
-                                td {
-                                    span {
-                                        color: #ff00cc;
-                                    }
-                                    &:nth-of-type(n+2) {
-                                        border-bottom: none;
-                                    }
-                                }
-                                
-                                p {
-                                    border: 1px solid #e2ddd4;
-                                    height: 20px;
-                                    margin-bottom: 0;
-                                }
-                            }
-                            .add_to_cart {
+                            .add_to {
+                                display: inline-block;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                margin-left: 20px;
                             }
                         }
                         
                         
                         .product_description {
                             margin-top: 30px;
-                            border-bottom: 2px solid #e2ddd4;
+                            border-bottom: 1px solid #887f69;
                             p {
                                 margin-bottom: 5px;
                                 font-weight: bold;
@@ -457,7 +488,7 @@ header {
                     // -----------------------
                     .product_area {
                         background-color: #fff;
-                        
+                        padding: 5px;
                         .name {
                             padding-top: 2.5rem;
                             margin-bottom: 0.5rem;
@@ -541,31 +572,74 @@ header {
                             }
                         }
                         
-                        .parts {
-                            .gragh {
-                                border-top: 1px solid #e2ddd4;
-                                th {
-                                    font-weight: bold;
-                                    color: #887f69;
-                                }
-                                td {
-                                    span {
-                                        color: #ff0099;
-                                        font-size: 1.7em;
+                        .purchase {
+                            position: relative;
+                            // border-bottom: 1px solid #e2ddd4;
+                            .details {
+                                display: inline-block;
+                                width: 27rem;
+                                box-sizing: border-box;
+                                .price {
+                                    display: inline-block;
+                                    width: 27rem;
+                                    height: 70px;
+                                    border-top: 1px solid #e2ddd4;
+                                    // border-bottom: 1px solid #e2ddd4;
+                                    box-sizing: border-box;
+                                    .title {
+                                        display: inline-block;
+                                        width: 100px;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                        color: #887f69;
+                                        margin-top: 25px;
                                     }
-                                    p {
-                                        border: 1px solid #e2ddd4;
-                                        height: 4.0rem;
-                                        margin-bottom: 0;
-                                        width: 80%;
+                                    .amount_of_money {
+                                        font-size: 1.6rem;
+                                        color: #f09;
+                                        display: inline-block;
+                                        width: 150px;
+                                        font-style: oblique;
+                                        // margin-left: 20px;
+                                        span {
+                                            font-size: 2.6rem;
+                                        }
+                                        p {
+                                            color: #000;
+                                            display: inline-block;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                                .quantity {
+                                    display: inline-block;
+                                    width: 27rem;
+                                    height: 70px;
+                                    border-top: 1px solid #e2ddd4;
+                                    border-bottom: 1px solid #e2ddd4;
+                                    // border-bottom: 1px solid #e2ddd4;
+                                    .title {
+                                        display: inline-block;
+                                        width: 100px;
+                                        font-size: 1.6rem;
+                                        font-weight: bold;
+                                        color: #887f69;
+                                        margin-top: 25px;
+                                    }
+                                    .number {
+                                        display: inline-block;
+                                        // margin-left: 20px;
+                                        
+                                        input {
+                                            width: 140px;
+                                            border-radius: 0;
+                                        }
                                     }
                                 }
                             }
-                            
-                            .cart {
-                                width: 80%;
+                            .add_to {
                                 text-align: center;
-                                margin: 0 auto;
+                                margin-top: 20px;
                             }
                         }
                         
@@ -598,6 +672,7 @@ header {
                         .table_description {
                             width: 100%;
                             padding-bottom: 50px;
+                            margin-bottom: 20px;
                             th, td {
                                 border: 1px solid #e2ddd4;
                             }
@@ -618,6 +693,7 @@ header {
                                     font-weight: normal;
                                     color: #887f69;
                                     font-size: 1.2rem;
+                                    padding-right: 15px;
                                 }
                             }
                         }
